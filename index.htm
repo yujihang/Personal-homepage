@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>前端菜鸟-喻寄航</title>
+    <script type="text/javascript">/*根据js监控页面的窗口大小 然后响应改变所有 font-size的大小*/
+        (function () {
+            function remSize() {
+                let sw = document.documentElement.clientWidth;
+                document.documentElement.style.fontSize = Math.floor(sw /4.14) + 'px';    /*4.14，设计稿的横向分辨率（iPhone7 plus）414/100得来*/
+            }
+            window.onresize = remSize;/*onresize 事件会在窗口或框架被调整大小时发生*/
+            window.onload = remSize;
+            window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function () {
+                let sw = document.documentElement.clientWidth;
+                var angle = window.screen.orientation.angle || window.orientation;
+                if (sw < 769 && (angle === 90 || angle === -90)) {
+                    alert("竖屏浏览体验更佳，亦可使用PC");
+                }
+            });/*移动端的浏览器一般都支持window.orientation这个参数，通过这个参数可以判断出手机旋转角度*/
+        })();
+    </script>
+    <link rel="stylesheet" type="text/css" href="cv/css/main1.css"  />
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="column page1 on">
+                <img class="bg1" src="cv/images/headimg.jpg">
+                <div class="mouse-tips down iconfont icon-icon_down"></div>
+                <div class="bg-black">
+                    <div class="title tit1">
+                        <h2>Keep it up！</h2>
+                        <p>喻寄航 个人简历</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column page2">
+                <h2 class="title tit2">项目经验</h2>
+                <div class="content">
+                    <div class="project pro1">
+                        <div class="pro-img">
+                            <div class="iconfont icon-css3"></div>
+                        </div>
+                        <div class="pro-txt">
+                            <h3>CSS</h3>
+                            <p>由CSS3实现的一些特效，如滤镜、缎带、遮罩条、倒影、阴影、渐变效果等</p>
+                        </div>
+                        <div class="pro-btn">
+                            <a class="pro-link" href="../project1-css/tab/tab.html"  target="_blank">LiveDemo</a>
+                            <a class="pro-link" href="https://github.com/yujihang/CSS" target="_blank">项目心得</a>
+                        </div>
+                    </div>
+                    <div class="project pro2">
+                        <div class="pro-img">
+                            <div class="iconfont icon-94"></div>
+                        </div>
+                        <div class="pro-txt">
+                            <h3>小游戏</h3>
+                            <p>实现了个人比较喜欢的一些小游戏，包括2048、五子棋、翻拍游戏</p>
+                        </div>
+                        <div class="pro-btn">
+                            <a class="pro-link" href="../project2-game/index.html" target="_blank">LiveDemo</a>
+                            <a class="pro-link" href="https://github.com/yujihang/Game" target="_blank">项目心得</a>
+                        </div>
+                    </div>
+                    <div class="project pro3">
+                        <div class="pro-img">
+                            <div class="iconfont icon-jquery-copy"></div>
+                        </div>
+                        <div class="pro-txt">
+                            <h3>Tolist</h3>
+                            <p>任务清单，可帮助你明确近期需要完成的任务和已完成的任务，并具有定时提醒功能</p>
+                        </div>
+                        <div class="pro-btn">
+                            <a class="pro-link" href="../project3-todolist/todo/index.html"  target="_blank">LiveDemo</a>
+                            <a class="pro-link" href="https://github.com/yujihang/Tolist"  target="_blank">项目心得</a>
+                        </div>
+                    </div>
+                    <div class="project pro4">
+                        <div class="pro-img">
+                            <div class="iconfont icon-chajian"></div>
+                        </div>
+                        <div class="pro-txt">
+                            <h3>组件</h3>
+                            <p>利用JavaScript、canvas实现的组件，如富文本编辑器、回到顶部、全屏粒子动画、流水灯等</p>
+                        </div>
+                        <div class="pro-btn">
+                            <a class="pro-link" href="../project4-javascript/index.html" target="_blank">LiveDemo</a>
+                            <a class="pro-link" href="https://github.com/yujihang/JavaScript" target="_blank">项目心得</a>
+                        </div>
+                    </div>
+                    <div class="project pro5">
+                        <div class="pro-img">
+                            <div class="iconfont icon-gereninfo"></div>
+                        </div>
+                        <div class="pro-txt">
+                            <h3>个人主页</h3>
+                            <p>即个人简历，就是你现在正在浏览的页面咯~</p>
+                        </div>
+                        <div class="pro-btn">
+                            <a class="pro-link" href="index.htm" target="_blank">LiveDemo</a>
+                            <a class="pro-link" href="https://github.com/yujihang/Personal-homepage" target="_blank">项目心得</a>
+                        </div>
+                    </div>
+                    <div class="project pro6">
+                        <div class="pro-img">
+                            <div class="iconfont icon-bbs1"></div>
+                        </div>
+                        <div class="pro-txt">
+                            <h3>web-bbs论坛</h3>
+                            <p>可以用已注册账号如：乘客，密码：123456登陆，查看论坛版块、发表文章、回复，也可重新注册账号，还可以用管理员账号：admin，密码123456登陆对论坛版块、用户进行管理</p>
+                        </div>
+                        <div class="pro-btn">
+                            <a class="pro-link" href="../project6-web-bbs-yjh/login.php"  target="_blank">LiveDemo</a>
+                            <a class="pro-link" href="https://github.com/yujihang/web-bbs-yjh" target="_blank">项目心得</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column page3">
+                <h2 class="title tit3">前端技能</h2>
+                <div class="content">
+                    <div class="skill skill1">
+                        <div class="front">
+                            <h5 class="skill-title">熟练掌握</h5>
+                            <p><span class="skill-point">photoShop</span></p>                            
+                            <p><span class="skill-point">HTML(5)</span></p>
+                            <p><span class="skill-point">CSS(3)</span></p>
+                        </div>
+                        <div class="backface">
+                            能熟练使用photoshop完成基本的图像处理，用html和css还原设计稿。各种居中、浮动、定位都调教过，熟悉响应式布局。
+                        </div>
+                    </div>
+                    <div class="skill skill2">
+                        <div class="front">
+                            <h5 class="skill-title">基本掌握</h5>
+                            <p><span class="skill-point">JavaScript</span></p>
+                            <p><span class="skill-point">Bootstrap</span></p>                            
+                            <p><span class="skill-point">Less</span></p>                             
+                            <p><span class="skill-point">Es6</span></p>  
+                        </div>
+                        <div class="backface">
+                            熟悉原生js、bootstrap及相关插件，常见的动画、交互基本能实现。拥有了良好的代码书写规范，注释清晰，简洁易读，对mvc、mvvm框架，commomjs规范，模块化，以及es6有一定的了解。
+                        </div>
+                    </div>
+                    <div class="skill skill3">
+                        <div class="front">
+                            <h5 class="skill-title">基本应用</h5>
+                            <p><span class="skill-point">jQuery</span></p>                            
+                            <p><span class="skill-point">Vue.js</span></p>
+                            <p><span class="skill-point">Webpack</span></p>
+                            <p><span class="skill-point">Npm</span></p>
+                        </div>
+                        <div class="backface">
+                            结合慕课网视频学习过前端热门技术vue、webpack，能够简单运用，使用vue和react写了一些demo，学会了使用webpack作为构建工具，npm进行包管理，了解eslint规范格式。
+                        </div>
+                    </div>
+                    <div class="skill skill4">
+                        <div class="front">
+                            <h5 class="skill-title">开发工具</h5>
+                            <p><span class="skill-point">Hbuilder</span></p>
+                            <p><span class="skill-point">Koala</span></p>
+                            <p><span class="skill-point">Chrome</span></p>
+                            <p><span class="skill-point">Git</span></p>
+                            <p><span class="skill-point">Xampp</span></p>
+                        </div>
+                        <div class="backface">
+                            常用的编辑器是国产的Hbuilder；能熟练运用Chrome调整css、调试debug；koala编译less，压缩js，自动添加prefix；使用git命令推项目到github。
+                        </div>
+                    </div>
+                    <div class="skill skill5">
+                        <div class="front">
+                            <h5 class="skill-title">常用插件</h5>
+                            <p><span class="skill-point">Store.js</span></p>
+                            <p><span class="skill-point">Modal.js</span></p>
+                            <p><span class="skill-point" style="margin: 5px 5px;">Datetimepicker</span></p>
+                        </div>
+                        <div class="backface">
+                            在学习及完成相关项目的过程中，了解及使用到了许多插件。Storejs：实现本地存储且兼容所有浏览器；Modal.js可覆盖在父窗体上，进行互动；用Datetimepicker选择日期，可精确到秒……
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column page4">
+                <h2 class="title tit4">个人经历</h2>
+                <div class="content">
+                    <div class="history his1">
+                        <div class="year">EXP1</div>
+                        <dl class="intro">
+                            <dt class="company">懵懂少年</dt>
+                            <dt>2008.9 - 2011.6</dt>
+                            <dt class="job">high school</dt>
+                            <dd>汶川地震</dd>
+                            <dd>垃圾食品吃太多</dd>
+                            <dd>上课瞌睡多</dd>
+                        </dl>
+                    </div>
+                    <div class="history his2">
+                        <div class="year">EXP2</div>
+                        <dl class="intro">
+                            <dt class="company">青春不复返</dt>
+                            <dt>2011.9 - 2015.7</dt>
+                            <dt class="job">本科生涯</dt>
+                            <dd>雅安地震</dd>
+                            <dd>没挂过科</dd>
+                            <dd>热衷于文艺活动</dd>
+                            <dd>没有女票没有男票</dd>
+                            <dd>光荣加入共产党</dd>
+                            <dd>对未来迷茫</dd>
+                        </dl>
+                    </div>
+                    <div class="history his3 cur">
+                        <div class="year">EXP3</div>
+                        <dl class="intro">
+                            <dt class="company">奋斗的骚年</dt>
+                            <dt>2015.9 至今</dt>
+                            <dt class="job">硕士生涯</dt>
+                            <dd>经历了恋爱</dd>
+	                        <dd>拿过奖学金</dd>
+                            <dd>发现了自己的兴趣</dd>
+                            <dd>喜欢讲道理</dd>
+                            <dd>追逐梦想</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="column page5">
+                <div class="content">
+                    <div class="end end1">追求代码的简洁易读</div>
+                    <div class="end end2">善于学习并解决问题</div>
+                    <div class="end end3">对新技术好奇但理智</div>
+                    <div class="end end4">我是你要找的前端吗</div>
+                    <div class="end end5">去了解更多</div>
+                    <div class="end end6">
+                        <a class="iconfont icon-github" href="https://github.com/yujihang" target="_blank"></a>
+                        <a class="iconfont icon-boke" href="http://www.cnblogs.com/yujihang/" target="_blank"></a>
+                    </div>
+                </div>
+                <div class="mouse-tips up iconfont icon-icon_down"></div>
+                <div class="footer">Copyright©2017 &nbsp;&nbsp;&nbsp;All Rights Reserved &nbsp;&nbsp;&nbsp;Designed by yjh
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--wrap end-->
+    <!--右侧导航按钮-->
+    <ul class="nav-right">
+        <!--标签换行会使图标居中失效-->
+        <li class="item iconfont icon-shouye on"><span>首页</span></li>
+        <li class="item iconfont icon-xiangmu"><span>项目</span></li>
+        <li class="item iconfont icon-jineng"><span>技能</span></li>
+        <li class="item iconfont icon-jiaoyujingli"><span>经历</span></li>
+        <li class="item iconfont icon-lianxi"><span>联系</span></li>
+        <li class="item info-tg2 iconfont icon-gereninfo"><span>信息</span></li>
+    </ul>
+    <!--导航按钮 end-->
+    <!--左侧信息弹出层-->
+    <div class="info">
+        <div class="info-tg ">
+            <div class="info-arrow iconfont icon-qianjin1"></div>
+        </div>
+        <div class="info-box">
+            <div href="" class="avatar"><img src="cv/images/avatar.jpg" alt="avatar"></div>
+            <ul class="info-ul">
+                <li class="info-li">
+                    <h3>NAME</h3>
+                    <p>喻寄航</p>
+                </li>
+                <li class="info-li">
+                    <h3>PERSONAL</h3>
+                    <p>男 24岁</p>
+                </li>
+                <li class="info-li">
+                    <h3>EDU</h3>
+                    <p>电子科技大学 硕士</p>
+                </li>
+                <li class="info-li">
+                    <h3>TEL</h3>
+                    <p>181-8845-7051</p>
+                </li>
+                <li class="info-li">
+                    <h3>e-mail</h3>
+                    <p>yujihang@hotmail.com</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--信息层 end-->
+    <script src="../cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+    <script src="cv/js/main1.js"></script>
+</body>
+
+</html>
